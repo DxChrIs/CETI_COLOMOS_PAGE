@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: #dddddd;
+    margin-top: 59px;
+    font-family: "Montserrat";
+}
+
+/* ESTILOS DEL CONTENIDO PRINCIPAL */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ESTILOS DE LA IMAGEN */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+/* ESTILOS DE LOS BOTONES */
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.sidebar-buttons button {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: 2px solid #d0021b; /* Borde del color especificado */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-buttons button:hover {
+    background-color: #d0021b; /* Cambia el fondo al pasar el cursor */
+    color: black; /* Cambia el texto a blanco */
+}
+
+/* ESTILOS RESPONSIVOS */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-buttons {
+        align-items: center;
+    }
+}

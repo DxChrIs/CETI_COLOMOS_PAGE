@@ -1,0 +1,142 @@
+.navigator_bar_design{
+    background-color: rgb(165, 127, 44);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    position: sticky;
+    top: 60px;
+    z-index: 10;
+}
+
+.navigator_bar_design ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navigator_bar_design ul li{
+    position: relative;
+}
+
+.navigator_bar_design ul.dropdown-menu a{
+    color: black;
+}
+
+.navigator_bar_design ul.dropdown-menu{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.navigator_bar_design ul.dropdown-menu button{
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding: 8px 15px;
+    width: 100%;
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navigator_bar_design ul.dropdown-menu button:hover{
+    background-color: rgba(185, 139, 39, 0.9);
+}
+
+.navigator_bar_design ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: medium;
+    transition: color 0.3s ease;
+}
+.navigator_bar_design ul li a:hover{
+    color: black;
+    background-color: rgba(185, 139, 39, 0.9);
+    border-radius: 5px;
+}
+
+.navigator_bar_design ul li.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    max-width: clamp(200px, 90vw, 300px);
+    overflow: hidden;
+}
+
+.navigator_bar_design ul li.dropdown-menu li a{
+    color: black;
+    padding: 8px 15px;
+}
+
+.navigator_bar_design ul li:hover .dropdown-menu{
+    display: block;
+}
+
+.navigator_bar_design ul li.dropdown-menu li a {
+    color: black;
+    padding: 8px 15px;
+}
+
+.navigator_bar_design ul.button-home-colomos a{
+    display: flex;
+    align-items: center;
+}
+
+.navigator_bar_design ul.button-home-colomos img{
+    width: 40px;
+    height: 40px;
+}
+
+.accessibility-icon{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.accessibility-icon img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media (max-width: 768px) and (min-width: 600px){
+    .navigator_bar_design {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigator_bar_design ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigator_bar_design ul li {
+        width: 100%;
+    }
+
+    .navigator_bar_design ul li a {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navigator_bar_design ul li .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+}
+/*#A57F2C
